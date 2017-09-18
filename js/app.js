@@ -1,11 +1,25 @@
-
 $(document).ready(function(){
     
-    $("#pop").css({
-        "display": "none"
-    });
-//    Starting Look
+//-----------------------------------------------------
     
+//    Intro Div
+    $("#wrapper").css({
+        "display": "block"
+    });
+    
+    $("#pop").css({
+        "display": "block"
+    });
+    
+    $("#enter").on("click", function(){
+        $("#wrapper").css({
+            "display": "none"
+        })
+    })
+    
+//-----------------------------------------------------    
+    
+//    Starting Look
     $("#cook").on("click", function(){
         
         $("#cook").css({
@@ -16,23 +30,10 @@ $(document).ready(function(){
             "display": "block"
         });
     }); 
-//    End Start Button÷
     
+//----------------------------------------------------- 
+    
+//    End Start Button
     $("#concepts").css({
         "display": "none"
     });
-    
-    $("#next").on("click", function(){
-        $("#langs").css({
-            "display": "none"
-        });
-        $("#concepts").css({
-            "display": "block"
-        });
-        $("#next").css({
-            "display": "none"
-        });
-        
-    });
-    
-});

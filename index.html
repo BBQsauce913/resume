@@ -8,7 +8,11 @@
 	<meta name="description" content="Week 8 assignment, Project 1" />
 	<meta name="classification" content="game" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+    </style>
+            
     
 	<!-- CSS & BOOTSTRAP & JQUERY -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,84 +25,189 @@
 	
 </head>
 <body>
+   
+   <div class="jumbotron jumbotron-overlay">
+            <div class="center">
+                <container>
+                   <h1 class="title" id="overlay">Chris Daschke</h1>
+                   <br>
+                   <h4 class="title">Interactive Resume</h4>
+                   <br>
+               </container>
+            </div>
+            <div class="overlay"></div>
+   </div>
+   
+<!--End Wrapper-->
+   
+<!------------------------------------------------------->
+   
+<!--Begin Profile-->
     
-    <div class="row">
-        <div class="page-header">
-            <h1 class="title" id="header">Chris Daschke</h1>
-        </div>
+    <div class="row" id="profile">
+    
+        <h1 class="title" id="header">Profile</h1>
         
-    <div class="row">
         <div class="col-lg-1"></div>
         
-        <div class="col-lg-3">
+        <div class="col-lg-10">
             <div class="panel panel-default">
-                <div class="panel-body">                    
-                    <div class="col-xs-8">
-                        <container class"side-bar">
-                            <h4 class="title">Education</h4>
-                            <ul>
-                                <li>Kansas University, Edwards Campus</li>
-                                <li>Overland Park, KS</li>
-                                <li>Graduating Nov. 2017</li>
-                                <li>Full Stack Development Cert.</li>
-                            </ul>
-                            
-                            <ul>
-                                <li>Kansas State University</li>
-                                <li>Manhattan, KS 66502</li>
-                                <li>Graduated Dec. 2015</li>
-                                <li>BA in Entrepreneurship</li>
-                            </ul>
+                <div class="panel-body" class="center">                   
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-4">
+                        <container class="center">
+                           <h4 class="title">About Me</h4>
+                            I am a well rounded developer. I am a junior level programmer with great knowledge of front end skills and techniques. My biggest emphasises are user experience and intuitivity. I like to dive deep into the details while still collaborating with other skilled individuals.
                          </container>
+                    </div>
+                    <div class="col-xs-2"></div>
+                    <div class="col-xs-4">
+                        <container class="center">
+                            <h4 class="title">Details</h4>
+                            <b>Name: </b>Chris Daschke
+                            <br>
+                            <b>Age: </b>24
+                            <br>
+                            <b>Location: </b>Kansas City, MO
+                        </container>
                     </div>
                 </div>
             </div>
         </div> 
         
         <div class="col-lg-1"></div>
+    </div>
+    
+
+<!--End Profile-->
+    
+<!------------------------------------------------------->
+
+<!--Begin Education & Experience-->
+
+    <div class="row" id="education"> 
+        <h1 class="title">Education & Experience</h1>
         
-        <div class="col-lg-4">
-            
-            <button class="btn btn-default" id="cook">See Skills</button>
-            
+        <div class="col-lg-1"></div>
+        
+        <div class="col-lg-10">
             <div class="panel panel-default" id="pop">
                 <div class="panel-body">
-                    <container id="skills">
-                        <div class="col-xs-6">
-                            <container id="langs">
-                                <h3 class="title">Technical Skills</h3>
-                                <br>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS</li>
-                                    <li>Bootstrap</li>
-                                    <li>JavaScript</li>
-                                    <li>JQuery</li>
-                                    <li>Firebase</li>
-                                    <li>Node.JS</li>
-                                    <li>RESTful APIs</li>
-                                    <li>GitHub</li>
-                                    <li>MySQL</li>
-                                    <li>Java, Spring MVC</li>
-                                </ul>
-                            </container>
-                        </div>
-                        
-                        <div class="col-xs-6">
-                            <button id="next">...</button>
-                            <container id="concepts">
-                                <h3 class="title">Conceptual Knowledge</h3>
-                            </container>
-                        </div>
+                    <container class="center">
+                        <h3 class="title">Education</h3>
+                            <table class="table table-active">
+                                <thead>
+                                    <tr>
+                                        <th>School</th>
+                                        <th>Degree</th>
+                                        <th>Graduated</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>University of Kansas</td>
+                                        <td>Full Stack Development Certificate</td>
+                                        <td>November 2017</td>
+                                    </tr>    
+                                    <tr>
+                                        <td>Kansas State University</td>
+                                        <td>Entreprenuership</td>
+                                        <td>December 2015</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        <h3 class="title">Experience</h3>
+                           <table class="table table-active">
+                               <thead>
+                                   <th>Company</th>
+                                   <th>Title</th>
+                                   <th>Duration (mm/yyyy)</th>
+                                   <th>Description</th>
+                               </thead>
+                               <tbody>
+                                   <td>Freightquote/CH Robinson</td>
+                                   <td>Account Executive</td>
+                                   <td>08/2016-Current</td>
+                                   <td id="des">
+                                       <ul>
+                                           <li>Built and maintained $20,000 book of business</li>
+                                           <li>Successfully secured accounts with 60+ Truckloads/LTLs a mont</li>
+                                           <li>Collaborated with carrier teams and other departments for winning business</li>
+                                           <li>Used two different eTMS and CRM systems</li>
+                                       </ul>
+                                   </td>
+                               </tbody>
+                           </table>
+                            
                     </container>
-                    
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    
+<!--End Education & Experience-->
 
-<script type="text/javascript" src="js/app.js"></script>
+<!------------------------------------------------------->
+    
+<!--Begin Skills & Languages-->
+  
+  <div class="row" id="skills">
+      <h1 class="title">Skills and Languages</h1>
    
+        <div class="col-lg-1"></div>
+           
+        <div class="col-lg-10">
+            <div class="panel panel-default" id="pop">
+                <div class="panel-body">
+                    <container id="skills">
+                        <div class="col-xs-6">
+                            <container class="center" id="langs">
+                                <h3 class="title">Skills</h3>
+                                HTML
+                                <br>
+                                CSS
+                                <br>
+                                Bootstrap
+                                <br>
+                                JavaScript
+                                <br>
+                                JQuery
+                                <br>
+                                Node.JS
+                                <br>
+                                RESTful APIs
+                                <br>
+                                Github
+                                <br>
+                                MySQL
+                                <br>
+                                Express.JS
+                                <br>
+                                Terminal Line
+                                <br>
+                                Python
+                                <br>
+                            </container>
+                        </div>
+                        
+                        <div class="col-xs-6">
+                            <container class="center" id="concepts">
+                                <h3 class="title">Conceptual Knowledge</h3>
+                                <ul>
+                                    <li>Using HTML, CSS, JavaScript, and JQuery to create dynamic and responsive web and software applications. Full Knowledge of front and back-end technologies</li>
+                                    <li>Consuming RESTful APIs using AJAX calls and JSON with JavaScript front end functionality</li>
+                            </container>
+                        </div>
+                    </container>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--End Skills-->
+
+<!------------------------------------------------------->
+
 </body>
 </html>
