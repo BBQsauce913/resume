@@ -1,0 +1,63 @@
+/*Fucking CSS is a Blast Friend*/
+/*Work in Progress*/
+/*--------------------------------------------*/
+body {
+    background-color: #D8D6D8;
+    color: #262426;
+    font-family: 'Alegreya Sans', sans-serif; 
+    font-size: 20px;   
+}
+
+h2,h3,h4 {
+    border-bottom: solid 1px black;
+}
+
+ul {
+    padding: 0px 150px 0px 75px;
+    margin-left: 120px;
+}
+
+th {
+    text-align: center;
+}
+
+#des {
+    
+}
+
+.jumbotron {
+    background: url("http://info.umkc.edu/mohanlab/wp-content/uploads/2016/05/kansas_city_skyline_BW.jpg");
+    height: 800px;
+    text-align: center;
+    color: #F3F5EE; 
+}
+
+#overlay {
+    margin-top: 50px;
+}
+
+#contact {
+    text-align: center;
+    background-color:  #D8D6D8;
+    margin-bottom: 5px;
+}
+
+.center {
+    height: 360px;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.title {
+    text-align: center;
+    color: #F34E4F;
+}
+
+.page-header {
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+}
+
+.panel-body {
+    text-align: center;
+}
